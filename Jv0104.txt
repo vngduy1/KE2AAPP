@@ -1,0 +1,13 @@
+
+PrintStream java.lang.System.out
+
+
+The "standard" output stream. This stream is alreadyopen and ready to accept output data. Typically this streamcorresponds to display output or another output destinationspecified by the host environment or user. The encoding usedin the conversion from characters to bytes is equivalent to Console.charset() if the Console exists, Charset.defaultCharset() otherwise. 
+
+For simple stand-alone Java applications, a typical way to writea line of output data is: 
+
+     System.out.println(data)
+ 
+
+See the println methods in class PrintStream.
+関連事項:java.io.PrintStream.println()java.io.PrintStream.println(boolean)java.io.PrintStream.println(char)java.io.PrintStream.println(char [])java.io.PrintStream.println(double)java.io.PrintStream.println(float)java.io.PrintStream.println(int)java.io.PrintStream.println(long)java.io.PrintStream.println(java.lang.Object)java.io.PrintStream.println(java.lang.String)Console.charset()Charset.defaultCharset

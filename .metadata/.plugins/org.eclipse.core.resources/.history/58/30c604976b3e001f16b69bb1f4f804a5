@@ -1,0 +1,22 @@
+import java.io.*;
+import java.net.*;
+
+public class Jv1001SV {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+		try {
+		    ServerSocket  ss = new ServerSocket(6000);
+		    while (true) {
+		    	Socket s = ss.accept();
+		    	
+		    	PrintWriter pw = new PrintWriter(s.getOutputStream());
+		    	pw.println("こんにちは。私はヴゴックズイです");
+		    	s.close();
+		    }
+		} catch (IOException e){
+			System.out.println(e);
+		}
+	
+	}
+}

@@ -1,0 +1,21 @@
+import java.io.*;
+import java.net.*;
+
+public class Jv1001SV {
+
+	public static void main(String[] args) {
+		try {
+		    ServerSocket ss = new ServerSocket(5000); // 別のポート番号を使用
+		    while (true) {
+		    	Socket s = ss.accept();
+		    	
+		    	PrintWriter pw = new PrintWriter(s.getOutputStream(), true);
+		    	pw.println("こんにちは。私はヴゴックズイです");
+		    	
+		    	pw.close();  // クライアントとの接続を閉じる
+		    }
+		} catch (IOException e) {
+			System.out.println(e);
+		}
+	}
+}
